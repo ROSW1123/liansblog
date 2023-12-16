@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hello, Leilos!</h1>
+			<h5>
+				I am Lian. Owner of this blog, talker of this blog, and core of this blog.
+			</h5>
+			<p>
+				This blog is used to record and share my life journey mostly career or academic pursuits. 
+				Any progress or result may be shared on this platform.
+			</p>
+			<img src="https://bafybeicqfodi6oabj2qfc5rhlecktcmifw4x5pg3xufqndcasqaftypcj4.ipfs.nftstorage.link/"/>
+			<small style="font-size:15px;color:grey;padding-left:17rem">NOT ME. just an illustration</small>
+			<p>
+				I am currently pursuing adventure in web3 and cybersecurity space. Current projects including golang for recon, 
+				rust for zk rollups, and a web app with solidity smart contract for slot machine.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+</style>
